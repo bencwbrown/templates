@@ -1,0 +1,208 @@
+%% This is a sample for an exam with 1 compulsory question.
+%% Needs v1.9 of exams.cls to support examcomp1 environment
+%%
+%
+\documentclass{exams}
+% 
+% If you want \Bbb or \frak
+\usepackage{amsfonts}
+%
+% Use other packages as needed.
+% Packages compatible with article class ought to work OK.
+
+
+%%
+%% Process your file twice so that the format can 
+%% get the CONTINUED and END on the correct pages.
+%%
+
+
+%%
+%% This data generates the first page header and 
+%% the running head
+%%
+\examcode{MA 9999}
+\examyear{3} % 1-4 for UG, 5=MSc
+\examdate{APRIL 1999}
+\examtitle{THE EXAMINATION TITLE} % In CAPS
+               %
+\examlength{4} % This is the number of questions for full marks. 
+               % For UG papers the actual number is normally 
+               % one more than this.
+               %
+\examtime{3}   % This is the length of exam in hours. It is optional.
+               % If not supplied a length of \examlength x .5 hours
+               % will be assumed.
+               %
+%
+\marks         % Uncomment this if you put marks in margin.
+               % A warning will be issued if you use \mark and you don't.
+               %
+%\resit         % Uncomment this for a resit exam.
+%\calculators   % Uncomment this if calculators are allowed.
+
+
+%% 
+%% You can number parts of a question using
+%% the enumerate environment. Adjust its appearance 
+%% as follows if you prefer roman numerals for the
+%% parts. The default is lower case letters a), b),...
+%%
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+%% If you need more than one level of enumerates
+%% then define the format for those, too.
+\renewcommand{\theenumii}{\roman{enumii}}
+%%
+
+
+
+%%
+%% Define your own macros, e.g.
+%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\g}{\mathfrak{g}}
+
+\begin{document}
+
+%% Marks can be displayed for parts of a question using the \mark{}
+%% macro at the end of a line where the marks should appear. Add
+%% \marks to the preamble to put a comment on this in the rubric.
+%% A warning will be issued if you use \mark{} without adding 
+%% \marks to the preamble.
+
+%
+\begin{examcomp1}
+
+\begin{question}
+\begin{enumerate}
+\item Describe the Euclidean algorithm for finding the
+highest common factor of two integers.\mark{10}
+
+\item Prove that every natural number $n$ can be expressed
+uniquely in the form
+$$
+n=p_1^{a_1}\cdots p_r^{a_r}
+$$
+where $p_1,\ldots,p_r$ are primes in strictly increasing order
+and $a_1,\ldots,a_r$ are positive integers.\mark{20}
+
+\item Factorize 22499 into primes using the fact that it has a
+prime factor in common with 60551.
+\mark{10}
+\end{enumerate}
+\end{question}
+
+\newpage
+
+\begin{question}
+Define the {\it M\"obius function} $\mu \colon \N \to \Z$
+and state, without proof, the M\"obius inversion formula.\mark{5}
+
+For $n \in \N$, let $\varphi(n)$ denote the {\it Euler
+function}:-- the number of positive integers less than $n$ and coprime
+to $n$. Prove that $n= \displaystyle{\sum_{d\vert n}} \varphi(d)$ and
+deduce that $\varphi(n) = n\displaystyle{\sum_{d\vert n}} \mu(d)/d$.
+By computing $\displaystyle{\sum_{d\vert n}} \varphi(d)$ when $n$ is a
+prime power and using the multiplicative property of $\varphi$ derive
+an explicit formula for $\varphi(n)$ in terms of the distinct prime
+divisors of $n$.\mark{10}
+
+Evaluate $\varphi(204800)$.\mark{5}
+\end{question}
+
+
+\begin{question}
+\begin{enumerate}
+\item Let $f \colon \R^n \to \R^m$ be a map. Say what it means for $f$ to be
+\textit{differentiable} at $a \in \R^n$. If $f \colon \R^n \to \R$ and
+$g \colon \R^n \to \R$ are both differentiable at $a$, prove Leibniz'
+Rule that the pointwise product $h(x) = f(x)g(x)$ is differentiable at
+$a$ and give the formula for the derivative $D_ah$ in terms of $D_af$
+and $D_ag$.\mark{10}
+
+\item For each of the following functions determine whether they are
+differentiable at the origin $(0,0)$. In each case give reasons for your
+answer (you may quote any relevant result from the course).
+
+\begin{enumerate}
+\item $f(x,y) = x^2 + 3x^2y + (y-1)^3$;\mark{5}
+\item $f(x,y) = \sqrt{x^2+y^2}$.\mark{5}
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+
+\begin{question}
+\begin{enumerate}
+\item Let $f \colon \R^n \to \R^m$ be a map. Say what it means for $f$ to be
+\textit{differentiable} at $a \in \R^n$. If $f \colon \R^n \to \R$ and
+$g \colon \R^n \to \R$ are both differentiable at $a$, prove Leibniz'
+Rule that the pointwise product $h(x) = f(x)g(x)$ is differentiable at
+$a$ and give the formula for the derivative $D_ah$ in terms of $D_af$
+and $D_ag$.\mark{10}
+
+\item For each of the following functions determine whether they are
+differentiable at the origin $(0,0)$. In each case give reasons for your
+answer (you may quote any relevant result from the course).
+
+\begin{enumerate}
+\item $f(x,y) = x^2 + 3x^2y + (y-1)^3$;\mark{5}
+\item $f(x,y) = \sqrt{x^2+y^2}$.\mark{5}
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+\newpage
+
+\begin{question}
+\begin{enumerate}
+\item Let $f \colon \R^n \to \R^m$ be a map. Say what it means for $f$ to be
+\textit{differentiable} at $a \in \R^n$. If $f \colon \R^n \to \R$ and
+$g \colon \R^n \to \R$ are both differentiable at $a$, prove Leibniz'
+Rule that the pointwise product $h(x) = f(x)g(x)$ is differentiable at
+$a$ and give the formula for the derivative $D_ah$ in terms of $D_af$
+and $D_ag$.\mark{10}
+
+\item For each of the following functions determine whether they are
+differentiable at the origin $(0,0)$. In each case give reasons for your
+answer (you may quote any relevant result from the course).
+
+\begin{enumerate}
+\item $f(x,y) = x^2 + 3x^2y + (y-1)^3$;\mark{5}
+\item $f(x,y) = \sqrt{x^2+y^2}$.\mark{5}
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+
+%
+%% \end{exam1comp} will automatically print END after the last question.
+%% Run LaTeX twice to get this right.
+\end{examcomp1}
+
+%%
+%% Some optional extras...
+%%
+
+Comments for the external can be placed here.
+
+%% Typeset solutions can be provided and these will follow the standard layout
+
+\begin{solution}
+
+Test
+
+\end{solution}
+
+\begin{solution}
+
+Test
+
+\end{solution}
+
+\end{document}
